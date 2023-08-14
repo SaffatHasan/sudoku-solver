@@ -269,7 +269,7 @@ impl eframe::App for MyApp {
                                     self.grid[i][j].focus = false;
                                 }
 
-                                // If you just clicked on an empty square then immediatly focus to allow typing
+                                // If you just clicked on an empty square then immediately focus to allow typing
                                 // Or if this is the square that the cursor needs to move too
                                 if response.clicked() || self.grid[i][j].focus {
                                     text_response.request_focus();
